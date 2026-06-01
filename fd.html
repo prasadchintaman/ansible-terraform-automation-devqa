@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food App Login</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: linear-gradient(to right, #87CEEB, #B0E0E6);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .login-container {
+            background: white;
+            padding: 40px;
+            width: 350px;
+            border-radius: 15px;
+            box-shadow: 0px 5px 15px rgba(0,0,0,0.2);
+            text-align: center;
+        }
+
+        .login-container h1 {
+            color: #0077b6;
+            margin-bottom: 10px;
+        }
+
+        .login-container p {
+            color: #555;
+            margin-bottom: 25px;
+        }
+
+        .input-group {
+            margin-bottom: 15px;
+        }
+
+        .input-group input {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            outline: none;
+        }
+
+        .input-group input:focus {
+            border-color: #87CEEB;
+        }
+
+        .login-btn {
+            width: 100%;
+            padding: 12px;
+            background-color: #00B4D8;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .login-btn:hover {
+            background-color: #0096C7;
+        }
+
+        .footer-text {
+            margin-top: 15px;
+            color: #666;
+        }
+
+        .footer-text a {
+            color: #0077b6;
+            text-decoration: none;
+        }
+
+        .food-icon {
+            font-size: 50px;
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="login-container">
+        <div class="food-icon">🍔</div>
+        <h1>Food Delivery App</h1>
+        <p>Login to order your favorite food</p>
+
+        <form>
+            <div class="input-group">
+                <input type="email" placeholder="Email Address" required>
+            </div>
+
+            <div class="input-group">
+                <input type="password" placeholder="Password" required>
+            </div>
+
+            <button type="submit" class="login-btn">Login</button>
+        </form>
+
+        <div class="footer-text">
+            Don't have an account? <a href="#">Sign Up</a>
+        </div>
+    </div>
+
+</body>
+</html>
